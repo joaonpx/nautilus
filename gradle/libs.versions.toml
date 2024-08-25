@@ -1,5 +1,11 @@
 [versions]
+activityComposeVersion = "1.8.0"
 agp = "8.5.2"
+androidxComposeBom = "2024.06.00"
+androidxJunit = "1.2.1"
+composeBomVersion = "2024.1.0"
+coreKtxVersion = "1.10.1"
+espressoCoreVersion = "3.6.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -8,9 +14,18 @@ espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.8.2"
 activityCompose = "1.9.0"
 composeBom = "2023.08.00"
+lifecycleRuntimeKtxVersion = "2.6.2"
+material3 = "1.2.1"
 
 [libraries]
+androidx-activity-compose-v180 = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
+androidx-compose-bom-v20240600 = { module = "androidx.compose:compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-bom-v202410 = { module = "androidx.compose:compose-bom", version.ref = "composeBomVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v1101 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+androidx-espresso-core-v361 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-junit-v121 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+androidx-lifecycle-runtime-ktx-v262 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -24,6 +39,13 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+ui = { module = "androidx.compose.ui:ui", version.ref = "composeBomVersion" }
+ui-graphics = { module = "androidx.compose.ui:ui-graphics", version.ref = "composeBomVersion" }
+ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "composeBomVersion" }
+ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "composeBomVersion" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "composeBomVersion" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "composeBomVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
